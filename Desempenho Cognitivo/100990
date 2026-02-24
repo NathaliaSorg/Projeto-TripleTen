@@ -1,0 +1,933 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
+    <meta name="robots" content="index, nofollow"/>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+            </script>
+        <![endif]-->
+            <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/fonts/open_sans/v13/open_sans.css">
+        <link rel="stylesheet" type="text/css" href="/fonts/pt_sans/v8/pt_sans.css">
+        <link rel="stylesheet" type="text/css" href="/fonts/lato/v11/lato.css">
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+          <style type="text/css">
+            table.dataTable {
+                margin: 0px 0px 40px 0px !important;
+            }
+            table.dataTable thead th,
+            table.dataTable tbody td,
+            table.dataTable thead > tr > th.sorting_asc, 
+            table.dataTable thead > tr > th.sorting_desc, 
+            table.dataTable thead > tr > th.sorting, 
+            table.dataTable thead > tr > td.sorting_asc, 
+            table.dataTable thead > tr > td.sorting_desc, 
+            table.dataTable thead > tr > td.sorting {
+                padding: 8px;
+                background-image: none;
+            }
+            table.dataTable thead .sorting::after, 
+            table.dataTable thead .sorting_asc::after, 
+            table.dataTable thead .sorting_desc::after, 
+            table.dataTable thead .sorting_asc_disabled::after, 
+            table.dataTable thead .sorting_desc_disabled::after {
+                content: none;
+            }
+            table.dataTable.no-footer {
+                border-bottom: 1px solid #ddd;
+            }
+            .dataTables_wrapper .dataTables_length {
+                color: #656565;
+                margin-bottom: 20px;
+            }
+            .dataTables_wrapper .dataTables_length label {
+                margin: 0px;
+            }
+            .dataTables_wrapper .dataTables_length select {
+                appearance:none;  
+                -moz-appearance:none;  
+                -webkit-appearance:none;
+                height: 34px;
+                line-height: 20px;
+            }
+            .dataTables_wrapper .dataTables_length select::-ms-expand {
+                display: none;
+            }
+            div.dataTables_wrapper div.dataTables_paginate {
+                padding: 0px;
+                float: none;
+                text-align: center;
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button {
+                padding: 0px;
+                border: 0px;
+            }
+            .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+                border: 0px;
+                background: none;
+            }
+            div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+                margin: 0px 10px 0px 0px;
+                vertical-align: top;
+            }
+        </style>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40438882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-40438882-1');
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/8c6e9dcd/jui/css/base/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/assets/f85d7166/gridview/styles.css" />
+<link rel="stylesheet" type="text/css" href="/css/pager.css" />
+<script type="text/javascript" src="/assets/8c6e9dcd/jquery.js"></script>
+<script type="text/javascript" src="/assets/8c6e9dcd/jquery.ba-bbq.js"></script>
+<script type="text/javascript" src="/assets/4fbc16fc/js/bootstrap.min.js"></script>
+<title>GigaDB Dataset - DOI 10.5524/100990 - Supporting data for &quot;The Nencki-Symfonia EEG/ERP dataset: Multiple cognitive tasks and resting-state ...</title>
+</head>
+
+<body>
+    
+            <div class="base-top-bar">
+            <div class="container">
+                <div class="row">
+                     <div class="col-xs-5">
+                        <ul class="list-inline text-left base-top-account-bar">
+                                                         <li><a href="/site/login"><i class="fa fa-sign-in"></i> Login / Signup</a></li>                         
+                                    
+                </ul>
+                    </div>
+                    <div class="col-xs-7 clearfix">
+                        <ul class="share-zone clearfix">
+                            <li><a href="http://facebook.com/GigaScience" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="http://twitter.com/GigaScience" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://weibo.com/gigasciencejournal" title="Weibo"><i class="fa fa-weibo"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/104409890199786402308" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="http://gigasciencejournal.com/blog/" title="GigaBlog"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                        <div class="search-bar clearfix">
+                            <form action="/search/new" method="GET">    
+                            <input class="search-input" placeholder="e.g. Chicken, brain etc..." id="keyword" type="text" name="keyword" />                            <button class="btn-search" type="submit"><span class="fa fa-search"></span></button>
+                            </form>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            <div class="base-nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="/"><img src="/images/new_interface_image/logo.png" class="base-nav-logo-img"></a>
+                    </div>
+                    <div class="col-xs-4 col-xs-offset-4">
+                        <ul class="nav nav-pills main-nav-bar text-right">
+                            <li><a href="/">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    About&nbsp;<i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/site/about">General</a></li>
+                                    <li><a href="/site/team">Our team</a></li>
+                                    <li><a href="/site/contact">Contact</a></li>
+                                    <li><a href="/site/advisory">Advisory Board</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Help&nbsp;<i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a href="/site/help">Help</a></li>
+                                <li><a href="/site/faq">FAQ</a></li>
+                                <li><a href="/site/guide">Guidelines</a></li>
+				</ul>
+                             </li>    
+                            <li><a href="/site/term">Terms of use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--
+                -->
+
+
+        <div class="content">
+    <div class="container">
+
+
+ 
+                <section></section>
+                <div class="subsection">
+                    <div class="media">
+                        <div class="media-left">
+                                                    <a href="/images/uploads/image_upload/Images_2140.png" >
+                <img class="media-object" title="&lt;ul style=&quot;text-align:left;&quot;&gt;&lt;li&gt;Fig. 5. Grand averaged ERP (with standard deviation) for oddball and MSIT+ tasks&lt;/li&gt;&lt;li&gt;License: CC0&lt;/li&gt;&lt;li&gt;Source: Dzianok et al., 2022&lt;/li&gt;&lt;li&gt;Photographer: Dzianok et al., 2022&lt;/li&gt;&lt;/ul&gt;" src="/images/uploads/image_upload/Images_2140.png" alt="/images/uploads/image_upload/Images_2140.png" />            </a>
+                                        
+                        </div>
+                        <div class="media-body">
+                            <h4 class="left-border-title left-border-title-lg">Supporting data for "The Nencki-Symfonia EEG/ERP dataset: Multiple cognitive tasks and resting-state data collected in a sample of healthy adults"</h4>
+                            <p class="dataset-release-date-text">Dataset type:  ElectroEncephaloGraphy(EEG), Electrophysiology, Neuroscience <br> Data released on January 28, 2022</p>
+                            <div class="color-background color-background-block dataset-color-background-block">
+                                <p><a class="result-sub-links" href="/search/new?keyword=Dzianok P&amp;author_id=14545">Dzianok P</a>; <a class="result-sub-links" href="/search/new?keyword=Antonova I&amp;author_id=14546">Antonova I</a>; <a class="result-sub-links" href="/search/new?keyword=Wojciechowski J&amp;author_id=14547">Wojciechowski J</a>; <a class="result-sub-links" href="/search/new?keyword=Dreszer J&amp;author_id=14548">Dreszer J</a>; <a class="result-sub-links" href="/search/new?keyword=Kublik E&amp;author_id=14549">Kublik E</a> (2022): Supporting data for "The Nencki-Symfonia EEG/ERP dataset: Multiple cognitive tasks and resting-state data collected in a sample of healthy adults" GigaScience Database. <a href="http://dx.doi.org/10.5524/100990">http://dx.doi.org/10.5524/100990</a></p>
+                                <p><a class="doi-badge" href="#"><span class="badge">DOI</span><span class="badge">10.5524/100990</span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <p>One of the primary goals of neuropsychology is to understand the brain mechanisms underlying various aspects of attention and cognitive control. Several tasks have been developed as a part of this body of research, however their results are not always consistent. A reliable comparison of the data and a synthesis of study conclusions has been precluded by multiple methodological differences. Here, we describe a publicly available, high-density electroencephalography (EEG) dataset obtained at the Nencki Institute of Experimental Biology from a sample of 42 healthy young adults while they performed three cognitive tasks: (1) an extended Multi-Source Interference Task (MSIT+) with control, Simon, Flanker, and multi-source interference trials; (2) a 3-stimuli oddball task with frequent standard, rare target, and rare distractor stimuli; (3) a control, simple reaction task (SRT); and additionally (4) a resting-state protocol (REST). Basic demographic and psychometric information are included within the dataset (including The Amsterdam Resting-state Questionnaire (ARSQ) and UWIST Mood Adjective Check List questionnaires). </p>
+                </div>
+               
+                <div class="subsection">
+                                         <p>Keywords:</p>
+                    <ul class="list-inline">
+                    <li><a href='/search/new?keyword=eeg'>eeg</a></li><li><a href='/search/new?keyword=msit'>msit</a></li><li><a href='/search/new?keyword=oddball'>oddball</a></li><li><a href='/search/new?keyword=resting state'>resting state</a></li><li><a href='/search/new?keyword=electroencephalography'>electroencephalography</a></li><li><a href='/search/new?keyword=cognitive control'>cognitive control</a></li><li><a href='/search/new?keyword=attention'>attention</a></li>                    </ul>
+                                      <div class="pull-right">
+                    <p>
+                        <span class="citation-popup" data-content="View citations on Google Scholar">
+                            <a href="http://scholar.google.com/scholar?q=10.5524/100990" target="_blank"><img class="dataset-des-images" src="/images/google_scholar.png"/></a>
+                        </span>
+                        <span class="citation-popup" data-content="View citations on Europe PubMed Central">
+                            <a href="http://europepmc.org/search?scope=fulltext&query=(REF:'10.5524/100990')" target="_blank"><img class="dataset-des-images" src="/images/ePMC.jpg"/></a>
+                        </span>
+			 <span class="citation-popup" data-content="View citations on Dimensions">
+                            <a href="https://app.dimensions.ai/discover/publication?search_text=10.5524%2F100990" target="_blank"><img class="dataset-des-images" src="/images/dimensions.jpg"/></a>
+                        </span>
+                    </p>
+                </div>    
+                </div>
+                                <div class="subsection">
+                                     <span class="content-popup" data-content="Please login to contact submitter" data-original-title="">
+                    <a class="btn background-btn background-btn-o notlogged" href="#">
+                        Contact Submitter
+                    </a>
+                   
+                </div>
+                <div class="subsection">
+                    
+                </div>
+                <div class="subsection">
+                    <div class="underline-title">
+                        <div>
+                            <h4>Additional details</h4>
+                        </div>
+                    </div>
+                                    <h5><strong>Read the peer-reviewed publication(s):</strong></h5>
+                <p>
+                    <br/>                </p>
+                
+                
+                
+                                 
+                </div>
+              
+                <section>
+                    <ul class="nav nav-tabs nav-border-tabs" role="tablist">
+                                                   <li role="presentation" id="p-sample"><a href="#sample" aria-controls="sample" role="tab" data-toggle="tab">Sample</a></li>
+                                                                        <li role="presentation" id="p-file"><a href="#files" aria-controls="files" role="tab" data-toggle="tab">Files</a></li>
+                                                                             <li role="presentation" id="p-funding"><a href="#funding" aria-controls="funding" role="tab" data-toggle="tab">Funding</a></li>
+                                                                         
+                         
+                            
+                        
+                        <li role="presentation" id="p-history"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">History</a></li>
+                        
+                    </ul>
+       
+            
+                    <div class="tab-content"> 
+                        
+                                
+                        
+                      <div role="tabpanel" class="tab-pane active" id="sample">
+                        <button class="btn btn-default pull-right" type="button" data-toggle="modal" data-target="#files-modal" style="border-color: #e5e5e5; color: #656565; height: 34px; margin-bottom: -34px; background-color: #fff;"><span class="glyphicon glyphicon-adjust"></span> <a style="cursor: pointer; text-decoration: underline;" onclick="{ $(&#039;#sampleDialog&#039;).dialog(&#039;open&#039;);}">Table Settings</a><div id="sampleDialog">
+    <div class="divForForm">
+        <form name="sampleSetting" method="POST"> 
+            <input type='hidden' name='columns[]' value="name"/>
+            
+            <div class="attribute-setting-item"> 
+                <label><strong>Items per page:</strong></label>
+                <select name="perPage" class="selectPageSize">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>                 
+                </select>
+            </div>
+
+            <div class="modal-body" style="padding: 30px;">
+
+                <div class="form form-inline" style="margin-bottom: 60px;">
+                   
+                    
+                       
+                         
+                            <input type="checkbox" name="columns[]" value="common_name"
+                            checked/><label for="sample_col1">Common Name</label>
+                       
+                    
+                       
+                            <input type="checkbox" name="columns[]" value="scientific_name"
+                            checked/><label for="sample_col2">Scienfic Name</label>
+                        
+                    
+                        
+                            <input type="checkbox" name="columns[]" value="attribute"
+                            checked/><label for="sample_col3">Sample Attributes</label>
+                       
+                  
+                        
+                            <input type="checkbox" name="columns[]" value="taxonomic_id"
+                            checked/><label for="sample_col4">Taxonomic ID</label>
+                      
+                       
+                            <input type="checkbox" name="columns[]" value="genbank_name"
+                            checked/><label for="sample_col5">Genbank Name</label>
+                     
+                    </div>
+
+
+                </div>
+           
+
+        </form>
+    </div>    
+
+</div></button>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                                                <div style="padding-top: 0px" id="sample-grid" class="grid-view">
+<div>
+    <table class="table table-bordered">
+<thead>
+<tr>
+<th style="color: #099242" id="sample-grid_c0"><a class="sort-link" href="/dataset/view/id/100990/Sample_sort/name">Sample ID</a></th><th style="color: #099242" id="sample-grid_c1"><a class="sort-link" href="/dataset/view/id/100990/Sample_sort/taxonomic_id">Taxonomic ID</a></th><th style="color: #099242" id="sample-grid_c2"><a class="sort-link" href="/dataset/view/id/100990/Sample_sort/common_name">Common Name</a></th><th style="color: #099242" id="sample-grid_c3"><a class="sort-link" href="/dataset/view/id/100990/Sample_sort/genbank_name">Genbank Name</a></th><th style="color: #099242" id="sample-grid_c4"><a class="sort-link" href="/dataset/view/id/100990/Sample_sort/scientific_name">Scientific Name</a></th><th style="color: #099242" id="sample-grid_c5">Sample Attributes</th></tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="left">sub-01</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148269">Description:Subject sub-01 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148269" style="display: none;">Description:Subject sub-01 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:F<br/>Age:22<br/></span><a href='#' class='js-desc' data='148269'>+</a></td></tr>
+<tr class="even">
+<td class="left">sub-02</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148270">Description:Subject sub-02 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148270" style="display: none;">Description:Subject sub-02 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:F<br/>Age:21<br/></span><a href='#' class='js-desc' data='148270'>+</a></td></tr>
+<tr class="odd">
+<td class="left">sub-03</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148271">Description:Subject sub-03 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148271" style="display: none;">Description:Subject sub-03 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:M<br/>Age:27<br/></span><a href='#' class='js-desc' data='148271'>+</a></td></tr>
+<tr class="even">
+<td class="left">sub-04</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148272">Description:Subject sub-04 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148272" style="display: none;">Description:Subject sub-04 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:M<br/>Age:26<br/></span><a href='#' class='js-desc' data='148272'>+</a></td></tr>
+<tr class="odd">
+<td class="left">sub-05</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148273">Description:Subject sub-05 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148273" style="display: none;">Description:Subject sub-05 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:M<br/>Age:25<br/></span><a href='#' class='js-desc' data='148273'>+</a></td></tr>
+<tr class="even">
+<td class="left">sub-06</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148274">Description:Subject sub-06 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148274" style="display: none;">Description:Subject sub-06 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:M<br/>Age:26<br/></span><a href='#' class='js-desc' data='148274'>+</a></td></tr>
+<tr class="odd">
+<td class="left">sub-07</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148275">Description:Subject sub-07 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148275" style="display: none;">Description:Subject sub-07 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:M<br/>Age:25<br/></span><a href='#' class='js-desc' data='148275'>+</a></td></tr>
+<tr class="even">
+<td class="left">sub-08</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148276">Description:Subject sub-08 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148276" style="display: none;">Description:Subject sub-08 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:M<br/>Age:33<br/></span><a href='#' class='js-desc' data='148276'>+</a></td></tr>
+<tr class="odd">
+<td class="left">sub-09</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148277">Description:Subject sub-09 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148277" style="display: none;">Description:Subject sub-09 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:F<br/>Age:20<br/></span><a href='#' class='js-desc' data='148277'>+</a></td></tr>
+<tr class="even">
+<td class="left">sub-10</td><td><a href="http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=9606">9606</a></td><td>Human</td><td>human</td><td>Homo sapiens</td><td class="left">		<span class="js-short-148278">Description:Subject sub-10 recruited for study of ...<br/>Experiment type:electroencephalography (EEG) [MMO:...<br/>Study design:stimulus or stress design [EFO:000176...<br/>...</span>
+        		<span class="js-long-148278" style="display: none;">Description:Subject sub-10 recruited for study of multiple cognitive tasks in healthy adults<br/>Experiment type:electroencephalography (EEG) [MMO:0000023]<br/>Study design:stimulus or stress design [EFO:0001762]<br/>Sex:F<br/>Age:20<br/></span><a href='#' class='js-desc' data='148278'>+</a></td></tr>
+</tbody>
+</table>
+</div>
+<div class="pull-left">
+    <div class=""><ul id="yw0" class="yiiPager"><li class="first hidden"><a href="/dataset/view/id/100990"><< First</a></li>
+<li class="previous hidden"><a href="/dataset/view/id/100990">< Previous</a></li>
+<li class="page selected"><a href="/dataset/view/id/100990">1</a></li>
+<li class="page"><a href="/dataset/view/id/100990/Sample_page/2">2</a></li>
+<li class="page"><a href="/dataset/view/id/100990/Sample_page/3">3</a></li>
+<li class="page"><a href="/dataset/view/id/100990/Sample_page/4">4</a></li>
+<li class="page"><a href="/dataset/view/id/100990/Sample_page/5">5</a></li>
+<li class="next"><a href="/dataset/view/id/100990/Sample_page/2">Next ></a></li>
+<li class="last"><a href="/dataset/view/id/100990/Sample_page/5">Last >></a></li></ul></div>
+</div>
+<div>
+    <div class="summary">Displaying 1-10 of 42 Sample(s).</div>
+</div><div class="keys" style="display:none" title="/dataset/100990"><span>148269</span><span>148270</span><span>148271</span><span>148272</span><span>148273</span><span>148274</span><span>148275</span><span>148276</span><span>148277</span><span>148278</span></div>
+</div>    
+                      </div>
+                                                     
+                        <div role="tabpanel" class="tab-pane" id="files">
+                                 
+                            <button onclick="window.open('https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/');" class="btn btn-default pull-left" type="button" data-toggle="modal" data-target="#files-modal" style="border-color: #e5e5e5; color: #656565; height: 34px; margin-bottom: -34px; background-color: #fff;"><span class="glyphicon glyphicon-adjust"></span> <a target="_blank" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/">(FTP site)</a></button>
+                            <button class="btn btn-default pull-right" type="button" data-toggle="modal" data-target="#files-modal" style="border-color: #e5e5e5; color: #656565; height: 34px; margin-bottom: -34px; background-color: #fff;"><span class="glyphicon glyphicon-adjust"></span> <a style="cursor: pointer; text-decoration: underline;" onclick="{ $(&#039;#dialogDisplay&#039;).dialog(&#039;open&#039;);}">Table Settings</a><div id="dialogDisplay">
+    <div class="divForForm">
+        <form name="myform" method="POST">
+        <input type='hidden' name='setting[]' value="name"/> 
+
+            <div class="attribute-setting-item"> 
+                <label><strong>Items per page:</strong></label>
+                <select name="pageSize" class="selectPageSize">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>                 
+                </select>
+            </div>
+
+            <div class="attribute-setting-content">
+                <div class="row">
+                    <div ><h3>Columns:</h3></div>
+                    <div class="span4">
+                        <div class="row">
+                            <div class="span3">File Description</div>
+                            <div class="span1"><input type="checkbox" name="setting[]"value="description" 
+                                />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span3">Sample ID</div>
+                            <div class="span1"><input type="checkbox" name="setting[]"value="sample_id" 
+                                checked/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span3">Data Type</div>
+                            <div class="span1"><input type="checkbox" name="setting[]" value="type_id"
+                            checked/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span3">File Format</div>
+                            <div class="span1"><input type="checkbox" name="setting[]" value="format_id"
+                            checked/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span4">
+                         <div class="row">
+                            <div class="span3">Size</div>
+                            <div class="span1"><input type="checkbox" name="setting[]" value="size"
+                            checked/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span3">Release Date</div>
+                            <div class="span1"><input type="checkbox" name="setting[]" value="date_stamp"
+                            checked/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span3">Download Link</div>
+                            <div class="span1"><input type="checkbox" name="setting[]" value="location"
+                            checked/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span3">File Attributes</div>
+                            <div class="span1"><input type="checkbox" name="setting[]" value="attribute"
+                            />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div>
+                
+        </form>
+
+    </div>    
+
+</div></button>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div style="padding-top: 0px" id="file-grid" class="grid-view">
+<div>
+    <table class="table table-bordered">
+<thead>
+<tr>
+<th style="color: #099242" id="file-grid_c0"><a class="sort-link" href="/dataset/view/id/100990/File_sort/name">File Name</a></th><th style="color: #099242" id="file-grid_c2">Sample ID</th><th style="color: #099242" id="file-grid_c3"><a class="sort-link" href="/dataset/view/id/100990/File_sort/type_id">Data Type</a></th><th style="color: #099242" id="file-grid_c4"><a class="sort-link" href="/dataset/view/id/100990/File_sort/format_id">File Format</a></th><th style="color: #099242" id="file-grid_c5"><a class="sort-link" href="/dataset/view/id/100990/File_sort/size">Size</a></th><th style="color: #099242" id="file-grid_c6"><a class="sort-link" href="/dataset/view/id/100990/File_sort/date_stamp">Release Date</a></th><th class="button-column" id="file-grid_c8">&nbsp;</th></tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>		<div title="dataset description"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/dataset_description.json' target='_blank'>
+		dataset_description.json
+		</a> 
+		<div></td><td>        		<span class="js-long-469094"></span></td><td>Metadata</td><td>JSON</td><td>0.92 KB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/dataset_description.json"><img src="" alt="" /></a></td></tr>
+<tr class="even">
+<td>		<div title="meta information about participants.json file"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/participants.json' target='_blank'>
+		participants.json
+		</a> 
+		<div></td><td>        		<span class="js-long-469095"></span></td><td>Metadata</td><td>JSON</td><td>25.13 KB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/participants.json"><img src="" alt="" /></a></td></tr>
+<tr class="odd">
+<td>		<div title="information about the participants and psychometric tests results"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/participants.tsv' target='_blank'>
+		participants.tsv
+		</a> 
+		<div></td><td>        		<span class="js-long-469096"></span></td><td>Metadata</td><td>TSV</td><td>9.42 KB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/participants.tsv"><img src="" alt="" /></a></td></tr>
+<tr class="even">
+<td>		<div title="BIDS required readme file, includes dataset citation information"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/README' target='_blank'>
+		README
+		</a> 
+		<div></td><td>        		<span class="js-long-470476"></span></td><td>Readme</td><td>TEXT</td><td>0.44 KB</td><td>2022-01-26</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/README"><img src="" alt="" /></a></td></tr>
+<tr class="odd">
+<td>		<div title=""> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/readme_100990.txt' target='_blank'>
+		readme_100990.txt
+		</a> 
+		<div></td><td>        		<span class="js-long-469093"></span></td><td>readme</td><td>TEXT</td><td>130.59 KB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/readme_100990.txt"><img src="" alt="" /></a></td></tr>
+<tr class="even">
+<td>		<div title="sourcedata: CapTrak electrode localization for subject sub-01"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sourcedata/sub-01/coords/sub-01_captrak.bvct' target='_blank'>
+		sub-01_captrak.bvct
+		</a> 
+		<div></td><td>        		<span class="js-long-469097">sub-01</span></td><td>other</td><td>UNKNOWN</td><td>67.42 KB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sourcedata/sub-01/coords/sub-01_captrak.bvct"><img src="" alt="" /></a></td></tr>
+<tr class="odd">
+<td>		<div title="EEG channels description for subject sub-01 and task msit"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sub-01/eeg/sub-01_task-msit_channels.tsv' target='_blank'>
+		sub-01_task-msit_channels.tsv
+		</a> 
+		<div></td><td>        		<span class="js-long-469098">sub-01</span></td><td>Tabular Data</td><td>TSV</td><td>1.6 KB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sub-01/eeg/sub-01_task-msit_channels.tsv"><img src="" alt="" /></a></td></tr>
+<tr class="even">
+<td>		<div title="EEG data for subject sub-01 and task msit (BrainVision Core Data Format .eeg file)"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sub-01/eeg/sub-01_task-msit_eeg.eeg' target='_blank'>
+		sub-01_task-msit_eeg.eeg
+		</a> 
+		<div></td><td>        		<span class="js-long-469099">sub-01</span></td><td>EEG</td><td>UNKNOWN</td><td>696.6 MB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sub-01/eeg/sub-01_task-msit_eeg.eeg"><img src="" alt="" /></a></td></tr>
+<tr class="odd">
+<td>		<div title="EEG data for subject sub-01 and task msit (BrainVision Core Data Format .vhdr file)"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sub-01/eeg/sub-01_task-msit_eeg.vhdr' target='_blank'>
+		sub-01_task-msit_eeg.vhdr
+		</a> 
+		<div></td><td>        		<span class="js-long-469100">sub-01</span></td><td>EEG</td><td>UNKNOWN</td><td>2.4 KB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sub-01/eeg/sub-01_task-msit_eeg.vhdr"><img src="" alt="" /></a></td></tr>
+<tr class="even">
+<td>		<div title="EEG data for subject sub-01 and task msit (BrainVision Core Data Format .vmrk file)"> 
+		<a href='https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sub-01/eeg/sub-01_task-msit_eeg.vmrk' target='_blank'>
+		sub-01_task-msit_eeg.vmrk
+		</a> 
+		<div></td><td>        		<span class="js-long-469101">sub-01</span></td><td>EEG</td><td>UNKNOWN</td><td>31.74 KB</td><td>2022-01-22</td><td class="button-column"><a target="_blank" class="download-btn js-download-count" title="" href="https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/sub-01/eeg/sub-01_task-msit_eeg.vmrk"><img src="" alt="" /></a></td></tr>
+</tbody>
+</table>
+</div>
+<div class="pull-left">
+    <div class=""><ul id="yw1" class="yiiPager"><li class="first hidden"><a href="/dataset/view/id/100990"><< First</a></li>
+<li class="previous hidden"><a href="/dataset/view/id/100990">< Previous</a></li>
+<li class="page selected"><a href="/dataset/view/id/100990">1</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/2">2</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/3">3</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/4">4</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/5">5</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/6">6</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/7">7</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/8">8</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/9">9</a></li>
+<li class="page"><a href="/dataset/view/id/100990/File_page/10">10</a></li>
+<li class="next"><a href="/dataset/view/id/100990/File_page/2">Next ></a></li>
+<li class="last"><a href="/dataset/view/id/100990/File_page/131">Last >></a></li></ul></div>
+</div>
+<div>
+    <div class="summary">Displaying 1-10 of 1308 File(s).</div>
+</div><div class="keys" style="display:none" title="/dataset/100990"><span>469094</span><span>469095</span><span>469096</span><span>470476</span><span>469093</span><span>469097</span><span>469098</span><span>469099</span><span>469100</span><span>469101</span></div>
+</div>
+                        </div>
+                                                                                 
+                        <div role="tabpanel" class="tab-pane" id="funding">
+                           
+                                
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th>Funding body</th>
+                                <th>Awardee</th>
+                                <th>Award ID</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                                        
+                            <tr>
+                                <td>Polish National Science Centre</td>
+                                <td>A Cichocki</td>
+                                <td>2016/20/W/NZ4/00354</td>
+                                <td></td>
+                            </tr>
+                             
+                        </tbody>
+                    </table>
+               
+
+                        </div>
+                       
+                        
+                      
+                    
+                       
+                    
+                      
+                            
+                             
+                            
+                           
+                          
+                                       
+                        <div role="tabpanel" class="tab-pane" id="history">
+                            
+                          <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Action</th>                               
+                            </tr>
+                        </thead>
+                        <tbody>                            
+                                                <tr>
+                            <td>January 27, 2022</td>
+                            <td>Dataset publish</td>
+                        </tr>
+                                                <tr>
+                            <td>January 31, 2022</td>
+                            <td>Manuscript Link added : 10.1093/gigascience/giac015</td>
+                        </tr>
+                                                </tbody>
+                       </table>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+
+
+<div class="clear"></div>
+
+<a href="/dataset/100989"  title="Previous dataset"><span class="fa fa-angle-left fixed-btn-left"></span></a>
+<a href="/dataset/100991" title="Next dataset"><span class="fa fa-angle-right fixed-btn-right"></span></a>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script>
+
+/* Document ready for Thumbnail Slider */
+/* ----------------------------------- */
+$(document).ready(function() {
+    // If the related are more than 3 so we add the caroussel
+    if ($('#myCarousel').attr('data-total') > 3) {
+        $('#myCarousel').carousel({
+            interval: 4000,
+            wrap: 'circular'
+        });
+    }
+    	$('.tab-container').on("click", function() {
+		$(this).toggleClass('tab-show');
+		$(this).toggleClass('tab-hide');
+
+		var arrow = $(this).find('.tab-container__arrow')[0];
+		$(arrow).toggleClass('flip-vertical');
+	});
+	var url = location.pathname;
+        var sample_index = url.lastIndexOf('Sample_');
+        var file_index = url.lastIndexOf('File_');
+        
+         if (/Sample/.test(window.location.href)) {
+             $("#p-sample").addClass("active");
+              var e = document.getElementById('p-sample');
+              if (!!e && e.scrollIntoView) {
+                   e.scrollIntoView();
+              }
+             
+        }
+        else{
+             $("#p-sample").addClass("active");           
+        }
+         if (/File/.test(window.location.href)) {
+            
+             $("#p-sample").removeClass("active");
+             $("#sample").removeClass("tab-pane active");
+             $("#sample").addClass("tab-pane");
+             $("#p-file").addClass("active");
+             $("#files").addClass("active");
+             
+             var e = document.getElementById('p-file');
+             if (!!e && e.scrollIntoView) {
+             e.scrollIntoView();
+            }
+            
+             
+        }
+   
+        if(sample_index > 0 && file_index>0)
+        {
+        if(sample_index > file_index)
+        {
+            $("#p-file").removeClass("active");
+            $("#files").removeClass("tab-pane active");
+            $("#files").addClass("tab-pane");
+            $("#p-sample").addClass("active");
+            $("#sample").addClass("active");
+              var e = document.getElementById('p-sample');
+              if (!!e && e.scrollIntoView) {
+                   e.scrollIntoView();
+              }   
+        }
+       else
+        {
+             $("#p-sample").removeClass("active");
+             $("#sample").removeClass("tab-pane active");
+             $("#sample").addClass("tab-pane");
+             $("#p-file").addClass("active");
+             $("#files").addClass("active");
+             
+             var e = document.getElementById('p-file');
+             if (!!e && e.scrollIntoView) {
+             e.scrollIntoView();
+            }
+        }
+    }
+    var MyJSStringVar = ""
+    if(MyJSStringVar == 'file')
+    {
+             $("#p-sample").removeClass("active");
+             $("#sample").removeClass("tab-pane active");
+             $("#sample").addClass("tab-pane");
+             $("#p-file").addClass("active");
+             $("#files").addClass("active");
+             
+             var e = document.getElementById('p-file');
+             if (!!e && e.scrollIntoView) {
+             e.scrollIntoView();
+            }
+    }
+    if(MyJSStringVar == 'sample')
+    {
+              var e = document.getElementById('p-sample');
+              if (!!e && e.scrollIntoView) {
+                   e.scrollIntoView();
+              }   
+    }
+        
+});
+/* ----------------------------------- */
+
+$(".hint").tooltip({'placement':'right'});
+$(".media-object").tooltip({'placement':'top'});
+
+$("#js-expand-btn").click(function(){
+      $(this).hide();
+      $("#js-close-btn").show();
+      $("#js-logs-2").show();
+});
+
+$("#js-close-btn").click(function(){
+      $(this).hide();
+      $("#js-expand-btn").show();
+      $("#js-logs-2").hide();
+});
+
+
+$("#js-expand-btn1").click(function(){
+      $(this).hide();
+      $("#js-close-btn1").show();
+      $("#js-logs-1").show();
+});
+
+$("#js-close-btn1").click(function(){
+      $(this).hide();
+      $("#js-expand-btn1").show();
+      $("#js-logs-1").hide();
+});
+
+$("#js-expand-btn2").click(function(){
+      $(this).hide();
+      $("#js-close-btn2").show();
+      $("#js-logs-2").show();
+});
+
+$("#js-close-btn2").click(function(){
+      $(this).hide();
+      $("#js-expand-btn2").show();
+      $("#js-logs-2").hide();
+});
+$("#js-expand-btn3").click(function(){
+      $(this).hide();
+      $("#js-close-btn3").show();
+      $("#js-logs-3").show();
+});
+
+$("#js-close-btn3").click(function(){
+      $(this).hide();
+      $("#js-expand-btn3").show();
+      $("#js-logs-3").hide();
+});
+
+$(".js-download-count").click(function(){
+    var location = $(this).attr('href');
+    $.ajax({
+       type: 'POST',
+       url: '/adminFile/downloadCount',
+       data:{'file_href': location},
+       success: function(response){
+            if(response.success) {
+            } else {
+                alert(response.message);
+            }
+          },
+      error:function(){
+        }
+    });
+});
+
+$(".content-popup").popover({'placement':'right'});
+$(".citation-popup").popover({'placement':'top'});
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script src="https://hypothes.is/embed.js" async></script>
+<script type="text/javascript">
+    $(".js-desc").click(function(e) {
+        e.preventDefault();
+        id = $(this).attr('data');
+        $(this).hide();
+        $('.js-short-'+id).toggle();
+        $('.js-long-'+id).toggle();
+    });
+</script>
+<script type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Dataset", "name" : "Supporting data for \u0022The Nencki-Symfonia EEG/ERP dataset: Multiple cognitive tasks and resting-state data collected in a sample of healthy adults\u0022", "description" : "One of the primary goals of neuropsychology is to understand the brain mechanisms underlying various aspects of attention and cognitive control. Several tasks have been developed as a part of this body of research, however their results are not always consistent. A reliable comparison of the data and a synthesis of study conclusions has been precluded by multiple methodological differences. Here, we describe a publicly available, high-density electroencephalography (EEG) dataset obtained at the Nencki Institute of Experimental Biology from a sample of 42 healthy young adults while they performed three cognitive tasks: (1) an extended Multi-Source Interference Task (MSIT+) with control, Simon, Flanker, and multi-source interference trials; (2) a 3-stimuli oddball task with frequent standard, rare target, and rare distractor stimuli; (3) a control, simple reaction task (SRT); and additionally (4) a resting-state protocol (REST). Basic demographic and psychometric information are included within the dataset (including The Amsterdam Resting-state Questionnaire (ARSQ) and UWIST Mood Adjective Check List questionnaires). ", "identifier" : "100990", "datePublished" : "2022-01-28", "provider": [ { "@type":"Person", "name": "Patrycja Dzianok", "email": "p.dzianok@nencki.edu.pl" } ], "url": "https://doi.org/10.5524/100990", "license": "Public Domain", "distribution" : { "@type" : "DataDownload", "contentUrl" : "https://ftp.cngb.org/pub/gigadb/pub/10.5524/100001_101000/100990/" }} </script>
+    <div id="sidebar">
+    </div><!-- sidebar -->
+
+<div class="base-footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <ul class="list-inline base-footer-logo-bar">
+                            <li><a href="http://gigasciencepress.com/"><img src="/images/new_interface_image/gigascience_white.png"></a></li>
+                            <li><a href="http://www.genomics.cn/"><img src="/images/new_interface_image/bgi_logo_white.png"></a></li>
+                            <li><a href="https://www.cngb.org"><img src="/images/new_interface_image/chinagenbank.png"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="base-footer-email"><a href="/site/contact"><i class="fa fa-envelope"></i> database@gigasciencejournal.com</a></p>
+                        <ul class="list-inline base-footer-social-bar">
+                            <li><a href="http://facebook.com/GigaScience" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="http://twitter.com/GigaScience" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://weibo.com/gigasciencejournal" title="Weibo"><i class="fa fa-weibo"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/104409890199786402308" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="http://gigasciencejournal.com/blog/" title="RSS"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer -->
+    <!-- Le javascript
+     ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+     <!-- <script src="/js/jquery.js"></script>-->
+     <!-- <script src="/js/google-code-prettify/prettify.js"></script>-->
+     <!-- <script src="/js/bootstrap-transition.js"></script>
+     <script src="/js/bootstrap-alert.js"></script>
+     <script src="/js/bootstrap-modal.js"></script>
+     <script src="/js/bootstrap-dropdown.js"></script>
+     <script src="/js/bootstrap-scrollspy.js"></script>
+     <script src="/js/bootstrap-tab.js"></script>
+     <script src="/js/bootstrap-tooltip.js"></script>
+     <script src="/js/bootstrap-popover.js"></script>
+     <script src="/js/bootstrap-button.js"></script>
+     <script src="/js/bootstrap-collapse.js"></script>
+     <script src="/js/bootstrap-carousel.js"></script>
+     <script src="/js/bootstrap-typeahead.js"></script>-->
+     <!-- <script src="/js/application.js"></script>-->
+     
+          
+        <div class="popover-login" style="display: none;">
+            <div class="content-btnlog">
+                <!--<a class="btn btnlog orcid-log" href="/opauth/orcid">
+                     <img src="http://gigadb.org/images/icons/id.png"/>&nbsp;&nbsp;ORCID                </a>-->
+                <a class="btn btnlog center giga-log" href="/site/login">
+                     <img src="/images/icons/giga.png"/>&nbsp;
+                </a>
+             </div>
+             <div class="content-btnlog">
+                 <a class="btn btnlog facebook-log" href="/opauth/facebook">
+                     <img src="/images/icons/fb.png"/>&nbsp;&nbsp;Facebook                 </a>
+                <a class="btn btnlog google-log" href="/opauth/google">
+                     <img src="/images/icons/google.png"/>&nbsp;&nbsp;Google                </a>
+             </div>
+             <div class="content-btnlog">
+                <a class="btn btnlog twitter-log" href="/opauth/twitter">
+                     <img src="/images/icons/twi.png"/>&nbsp;&nbsp;Twitter                </a>
+                <a class="btn btnlog linkedin-log" href="/opauth/linkedin">
+                    <img src="/images/icons/in.png"/>&nbsp;&nbsp;LinkedIn                </a>
+             </div>
+        </div>
+     
+         
+     <script>
+    $(function() {
+        $("#btnCreateAccount").tooltip({'placement':'left'});
+        
+                    $('#btnLogin').attr('data-content', $('.popover-login').html()).popover({
+                trigger: 'manual',
+                animate: false,
+                stay: true,
+                placement: 'bottom',
+                template: '<div class="popover login-popover"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"></h3><div class="popover-content"><p></p></div></div></div>'
+            }).on('click', function() {
+                return false;
+            }).mouseenter(function(e) {
+                $(this).popover('show');
+                
+                $('.popover').one('mouseleave', function() {
+                    $('#btnLogin').popover('hide');
+                });
+            });
+            });
+    </script>
+     
+<script type="text/javascript" src="/assets/8c6e9dcd/jui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/assets/f85d7166/gridview/jquery.yiigridview.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('a[rel="tooltip"]').tooltip();
+jQuery('a[rel="popover"]').popover();
+jQuery('#sampleDialog').dialog({'title':'Display Setting','autoOpen':false,'modal':true,'width':800,'height':220,'buttons':[{'text':'Submit','click':function(){ document.sampleSetting.submit();}},{'text':'Cancel','click':function(){$(this).dialog("close");}}]});
+jQuery('#sample-grid').yiiGridView({'ajaxUpdate':['sample-grid'],'ajaxVar':'ajax','pagerClass':'','loadingClass':'grid-view-loading','filterClass':'filters','tableClass':'table table-bordered','selectableRows':1,'enableHistory':false,'updateSelector':'{page}, {sort}','filterSelector':'{filter}','pageVar':'Sample_page'});
+jQuery('#dialogDisplay').dialog({'title':'Display Setting','autoOpen':false,'modal':true,'width':800,'height':300,'buttons':[{'text':'Submit','click':function(){ document.myform.submit();}},{'text':'Cancel','click':function(){$(this).dialog("close");}}]});
+jQuery('#file-grid').yiiGridView({'ajaxUpdate':['file-grid'],'ajaxVar':'ajax','pagerClass':'','loadingClass':'grid-view-loading','filterClass':'filters','tableClass':'table table-bordered','selectableRows':1,'enableHistory':false,'updateSelector':'{page}, {sort}','filterSelector':'{filter}','pageVar':'File_page'});
+jQuery('#keyword').autocomplete({'minLength':'2','source':[]});
+});
+/*]]>*/
+</script>
+</body>
+</html>
