@@ -1,2 +1,2 @@
-ZebraMap/train_split_50k_cases.csv filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
+ZebraMap/train_split_50k_cases.csv filter=lfs diff=lfs merge=lfs -text
